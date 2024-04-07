@@ -9,8 +9,8 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-app.get("/api/hello", (req, res) => {
-    res.json({message:"Hello World!", peoples: ["John", "Jane", "Joe"]});
+app.get("/api/user", (req, res) => {
+    res.json({name: "John", age: 30, mainPhoto: "", gender: "male", height: 180});
 });
 
 app.listen(PORT, () => {
